@@ -1,0 +1,17 @@
+{
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontSize": 14,
+  "workbench.panel.location": "bottom",
+  "sync.lastUpload": "",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+}
