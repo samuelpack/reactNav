@@ -13,7 +13,13 @@ export default class Home extends React.Component {
                 <Text> Home.js</Text>
                 <Button
                     title='go to details'
-                    onPress={() => this.props.navigation.navigate('Details')} />
+                    onPress={() => {
+                        this.props.navigation.navigate('Details', {
+                            itemId: 86,
+                            otherParam: 'anything you want here',
+                        });
+                    }}
+                />
             </Container>
 
         );
