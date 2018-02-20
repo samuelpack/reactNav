@@ -23,7 +23,16 @@ const RootStack = StackNavigator({
 },
   {
     initialRouteName: 'Home',
-  }
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#F4522E',
+      },
+      headerTintColor: '#FFFFFF',
+    },
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  },
 );
 
 export default class App extends Component {

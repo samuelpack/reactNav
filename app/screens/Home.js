@@ -7,13 +7,6 @@ import { Container } from '../components/Container';
 export default class Home extends React.Component {
     static navigationOptions = {
         title: 'Home',
-        headerStyle: {
-            backgroundColor: '#F4511E',
-        },
-        headerTintColor: '#FFFFFF',
-        headerTintStyle: {
-            fontWeight: 'bold',
-        },
     };
     render() {
         return (
