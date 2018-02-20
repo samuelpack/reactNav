@@ -5,6 +5,9 @@ import { Button, StatusBar, Text } from 'react-native';
 import { Container } from '../components/Container';
 
 export default class Home extends React.Component {
+    static navigationOptions = {
+        title: 'Home',
+    };
     render() {
         return (
             <Container>

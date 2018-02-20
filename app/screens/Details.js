@@ -5,6 +5,9 @@ import { Button, StatusBar, Text } from 'react-native';
 import { Container } from '../components/Container';
 
 export default class Home extends React.Component {
+    static navigationOptions = {
+        title: 'Details',
+    };
     render() {
         const { params } = this.props.navigation.state;
         const itemId = params ? params.itemId : null;
