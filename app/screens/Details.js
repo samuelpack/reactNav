@@ -28,6 +28,9 @@ export default class Details extends React.Component {
                     title='go to details...again'
                     onPress={() => this.props.navigation.navigate('Details')} />
                 <Button
+                    title='update the title'
+                    onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })} />
+                <Button
                     title='go back'
                     onPress={() => this.props.navigation.goBack()} />
             </Container>
