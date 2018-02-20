@@ -4,9 +4,13 @@ import { Button, StatusBar, Text } from 'react-native';
 
 import { Container } from '../components/Container';
 
-export default class Home extends React.Component {
-    static navigationOptions = {
-        title: 'Details',
+export default class Details extends React.Component {
+    static navigationOptions = ({ navigation }) => {
+        const { params } = navigation.state;
+
+        return {
+            title: params ? params.otherParam : 'A Nested Details Screen',
+        }
     };
     render() {
         const { params } = this.props.navigation.state;
