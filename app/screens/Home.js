@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
-import { Button, StatusBar, Text } from 'react-native';
-
+import { Button, Image, StatusBar, Text } from 'react-native';
 
 import { Container } from '../components/Container';
+// import { LogoTitle } from '../components/LogoTitle';
 
-export default class Home extends React.Component {
+class LogoTitle extends React.Component {
+    render() {
+        return (
+            <Image
+                source={require('../assets/images/logo.png')}
+                style={{ width: 50, height: 25 }}
+                resizeMode='contain'
+            />
+        );
+    }
+}
+
+
+
+class Home extends React.Component {
     static navigationOptions = {
-        title: 'Home',
+        headerTitle: <LogoTitle />,
     };
     render() {
         return (
@@ -29,3 +43,4 @@ export default class Home extends React.Component {
     }
 }
 
+export default Home;
